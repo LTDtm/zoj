@@ -2,7 +2,6 @@
   print("`ENOCH LOADING...")
   EXECUTOR="ErtY'wek'z ENOCH "
   VERCTRL="19.11.06"
-  warn(EXECUTOR .. VERCTRL)
 --[[ENOCH IS A ENGINE MADE BY ERTY (PROREMIXPL) THAT HELPS DEVELOPERS IN MAKING THEIR GAMES]]
 --[[IT MAKES AVERAGE DEVELOPER WORK MORE EFFECTIVE]]
   LM=game.StarterGui.Playground.EnochOS.LoadModule MM=game.StarterGui.Playground.EnochOS.MainModule EM=game.StarterGui.Playground.EnochOS.ErrorModule LocP=game.Players.LocalPlayer
@@ -33,5 +32,5 @@ end)
   
   
   
-  
+  warn(EXECUTOR .. VERCTRL)
 --[[CLOSING FOR ENOCH INJECTOR SCRIPT]]
