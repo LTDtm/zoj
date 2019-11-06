@@ -6,7 +6,7 @@
 --[[IT MAKES AVERAGE DEVELOPER WORK MORE EFFECTIVE]]
   LM=game.StarterGui.Playground.EnochOS.LoadModule MM=game.StarterGui.Playground.EnochOS.MainModule EM=game.StarterGui.Playground.EnochOS.ErrorModule LocP=game.Players.LocalPlayer
   HttpService=game:GetService('HttpService')ServerStorage=game:GetService("ServerStorage")DataStoreService=game:GetService("DataStoreService")TweenService=game:GetService("TweenService")
-  prefix="/" --[[set the prefix, / slash if not changed]]
+  prefix="`" --[[set the prefix, / slash or ! exclamation is most common on roblox]]
 function onChatted(msg, speaker)
 	local source=string.lower(speaker.Name)
 	msg=string.lower(msg)
