@@ -1,0 +1,37 @@
+--[[OPENING FOR ENOCH INJECTOR SCRIPT]]
+  print("`ENOCH LOADING...")
+  EXECUTOR="ErtY'wek'z ENOCH "
+  VERCTRL="19.11.06"
+  warn(EXECUTOR .. VERCTRL)
+--[[ENOCH IS A ENGINE MADE BY ERTY (PROREMIXPL) THAT HELPS DEVELOPERS IN MAKING THEIR GAMES]]
+--[[IT MAKES AVERAGE DEVELOPER WORK MORE EFFECTIVE]]
+  LM=game.StarterGui.Playground.EnochOS.LoadModule MM=game.StarterGui.Playground.EnochOS.MainModule EM=game.StarterGui.Playground.EnochOS.ErrorModule LocP=game.Players.LocalPlayer
+  HttpService=game:GetService('HttpService')ServerStorage=game:GetService("ServerStorage")DataStoreService=game:GetService("DataStoreService")TweenService=game:GetService("TweenService")
+  prefix="/" --[[set the prefix, / slash if not changed]]
+function onChatted(msg, speaker)
+	local source=string.lower(speaker.Name)
+	msg=string.lower(msg)
+	if msg==prefix.."respawn"then
+		speaker:LoadCharacter()
+	end
+	if msg==prefix.."sparkles"then
+		Instance.new("Sparkles", speaker.Character.HumanoidRootPart)
+	end
+	if msg==prefix.."tezt"then
+		warn("`tezt")
+	end
+	--[[to add more commands]]
+end
+game.Players.PlayerAdded:Connect(function(player)
+	player.Chatted:Connect(function(msg) 
+		onChatted(msg, player) 
+		end)
+end)
+  
+  
+  
+  
+  
+  
+  
+--[[CLOSING FOR ENOCH INJECTOR SCRIPT]]
