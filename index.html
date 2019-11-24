@@ -134,15 +134,16 @@ body {
 <ul class="topnav">
   <li><a class="active" href="#first">Home</a></li><!-- wstaw w href # id do pierwszego kontentu -->
   <li class="dropdown">
-    <a href="/PROJECTS" class="dropbtn">Projects</a>
+    <a href="/PROJECTS" onclick="menu('projects'); clicky.log('#menu/projects', this.innerText, pageview); return false;" class="dropbtn">Projects</a>
     <div class="dropdown-content">
       <a href="/PROJECTS/MinecraftClassic">MinecraftClassic</a>
       <a href="/PROJECTS/EFOR">Fine Overhaul Regraph</a>
     </div>
   </li>
-  <li class="right"><a href="/ABOUT">About</a></li>
+  <li class="right"><a href="/ABOUT" onclick="menu('about'); clicky.log('#menu/about', this.innerText, pageview); return false;">About</a></li>
 </ul>
 <div id="first" class="main">
+
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
@@ -159,13 +160,6 @@ PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RA
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 
-<button onclick="myFunction()">Copy text</button>
-<script>
-function myFunction() {
-  var copyText = window.location.href;
-  document.execCommand("copy");
-}
-</script>
 </div>
 
 <div class="footerty">
