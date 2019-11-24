@@ -122,13 +122,17 @@ body {
 }
 </style>
 
+
+
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101213734);</script>
+<script async src="//static.getclicky.com/js"></script>
 </head>
 <body>
 														<!-- B	O	D	Y -->
 
 														<!-- H	E	A	D	E	R -->
 <ul class="topnav">
-  <li><a class="active" href="#top">Home</a></li><!-- wstaw w href # id do pierwszego kontentu -->
+  <li><a class="active" href="#first">Home</a></li><!-- wstaw w href # id do pierwszego kontentu -->
   <li class="dropdown">
     <a href="/PROJECTS" class="dropbtn">Projects</a>
     <div class="dropdown-content">
@@ -138,7 +142,7 @@ body {
   </li>
   <li class="right"><a href="/ABOUT">About</a></li>
 </ul>
-<div class="main">
+<div id="first" class="main">
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
@@ -155,11 +159,17 @@ PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RA
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT<br>
 
-
+<button onclick="myFunction()">Copy text</button>
+<script>
+function myFunction() {
+  var copyText = window.location.href;
+  document.execCommand("copy");
+}
+</script>
 </div>
 
 <div class="footerty">
-All Rights Reserved ©2019/2020 ErtY'wek
+All Rights Reserved ©2019/2020 Jeremi ErtY'wek
 </div>
 														<!-- S	C	R	I	P	T -->
 
