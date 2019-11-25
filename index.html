@@ -15,6 +15,7 @@ This was made just only for my usage on https://zoj.me shared over an CDN
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="refresh" content="300"> <!-- RELOAD -->
 <link rel="stylesheet" type="text/css" href="out/EY.css">
+
 														<!-- S	T	Y	L	E -->
 <style>
 /* b-dark-purple#5c00e6 dark-green#004d00 */
@@ -239,9 +240,12 @@ body {
 <div class="main">
 
 <input type="checkbox" id="toggle">
-<label for="toggle">MODAL</label>
+<label onclick="loadDoc()" for="toggle">MODAL</label>
 <dialog style=""><label for="toggle">X</label>
-<p>PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT 
+<p><div id="xhttpget">
+<h1>The XMLHttpRequest Object</h1>
+
+</div>
 </p>
 </dialog>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
@@ -263,6 +267,19 @@ All Rights Reserved ©2019/2020 Jeremi ErtY'wek
 </div>
 														<!-- S	C	R	I	P	T -->
 
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("xhttpget").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt", true);
+  xhttp.send();
+}
+</script>
 <script>
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;

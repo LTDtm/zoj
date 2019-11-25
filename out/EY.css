@@ -25,10 +25,12 @@ label{
 
 dialog{
  animation: appear 350ms ease-in 1;
- max-width: 70%;
+ max-width: 99%;
  text-align: right;
+ font-size: small;
  background-color: #ffff00;
  padding: 7px 17px 7px 7px;
  position: fixed;
- top: 15%;
+ top: 7%;
+ bottom: 1%;
 }
