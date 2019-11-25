@@ -139,7 +139,7 @@ body {font-family: "Lato", sans-serif;}
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #246b1a;
+  background-color: #5b2e9e;
 }
 
 /* 																Style the tab content */
@@ -197,14 +197,14 @@ body {
 
 														<!-- H	E	A	D	E	R -->
 <ul class="topnav">
- <li><a class="active" href="#first">Home</a></li><!-- wstaw w href # id do pierwszego kontentu -->
- <li class="dropdown">
-  <a href="/PROJECTS" onclick="menu('projects'); clicky.log(this.href,this.innerText); return false;" class="dropbtn">Projects</a>
+<li><a class="active" href="#first">Home</a></li><!-- wstaw w href # id do pierwszego kontentu -->
+<li class="dropdown">
+	<a href="/PROJECTS" onclick="menu('projects'); clicky.log(this.href,this.innerText); return false;" class="dropbtn">Projects</a>
 	<div class="dropdown-content">
 		<a href="/PROJECTS/#">#</a>
 	</div>
- </li>
- <li class="right"><a href="/ABOUT" onclick="menu('about'); clicky.log(this.href,this.innerText); return false;">About</a></li>
+</li>
+<li class="right"><a href="/ABOUT" onclick="menu('about'); clicky.log(this.href,this.innerText); return false;">About</a></li>
 </ul>
 <div id="first" class="main">
 <div class="tab">
@@ -237,6 +237,13 @@ body {
 
 </div>
 <div class="main">
+
+<input type="checkbox" id="toggle">
+<label for="toggle">MODAL</label>
+<dialog style=""><label for="toggle">X</label>
+<p>PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT 
+</p>
+</dialog>
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
@@ -246,6 +253,7 @@ PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RA
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
 PUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENTPUT SOME RANDOM CONTENT
+
 
 
 </div>
@@ -273,5 +281,6 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
 </body>
 </html>
