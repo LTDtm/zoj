@@ -16,6 +16,12 @@ label{
  border-radius: 4px;
  text-align: right;
 }
+@-webkit-keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
 @keyframes appear {
   0%{
     opacity: 0;
@@ -34,4 +40,5 @@ dialog{
  top: 7%;
  bottom: 1%;
  border: 2% solid purple;
+ z-index: 9;
 }
