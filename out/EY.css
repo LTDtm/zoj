@@ -1,11 +1,11 @@
 #toggle{
-  visibility: hidden;
-  opacity: 0;
-  z-index: -1;
+ visibility: hidden;
+ opacity: 0;
+ z-index: -1;
 }
 
 #toggle:checked ~ dialog {
-  display: block;
+ display: block;
 }
 
 
@@ -24,7 +24,7 @@ label{
 }
 
 dialog{
- animation: appear 350ms ease-in 1;
+ animation: appear 350ms ease-in-out 1;
  max-width: 99%;
  text-align: right;
  font-size: small;
@@ -33,4 +33,5 @@ dialog{
  position: fixed;
  top: 7%;
  bottom: 1%;
+ border: 2% solid purple;
 }
