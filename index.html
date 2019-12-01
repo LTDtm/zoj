@@ -199,7 +199,6 @@ body {
 .maintab {
  color: #FFFF24;
  font-size: 20px;
- text-align: center;
  text-align: justify;
  align: top;
  width: 100%;
@@ -214,13 +213,12 @@ body {
  color: #FFFF24;
  font-size: 20px;
  text-align: center;
- text-align: justify;
+ text-justify: inter-word;
+ word-wrap: break-word
  align: top;
  width: 100%;
  text-shadow: 1px 1px 9px #f9f91f;
  padding: 0 1% 1% 1%;
- text-justify: inter-word;
- word-wrap: break-word
  clear: both;
 }
 
@@ -234,10 +232,24 @@ body {
  position: relative;
 }
 									/*img in article*/
-.imginart {
+.imgintab {
  float: right;
  margin: 0px 0px -5px 4px;
  clear: both;
+}
+
+.imgincon {
+ float: center;
+ text-align: center;
+ display: block;
+ margin-top: -15px;
+ margin-bottom: -15px;
+ margin-left: auto;
+ margin-right: auto;
+ clear: both;
+ width: 100%;
+ max-width: 200px;
+ height: auto;
 }
 
 sm {
@@ -310,12 +322,29 @@ sm {
 }
 </style>
 <style>													<!-- S	P	R	I	T	E	S -->
-
-.spriteyhome25x, .spriteysearch25x
-{ display: inline-block; background: url('pictures/spritey.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
- 
-.spriteyhome25x { background-position: -2px -0px; width: 25px; height: 25px; }
-.spriteysearch25x { background-position: -2px -27px; width: 25px; height: 25px; }
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 0px solid #999999;
+	display: table-cell;
+}
+.divTableHeading {
+	display: table-header-group;
+}
+.divTableFoot {
+	display: table-footer-group;
+}
+.divTableBody {
+	display: table-row-group;
+}
 </style>
 
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101213734);</script>
@@ -345,6 +374,14 @@ sm {
 </form></a>
 </li>
 </ul>
+
+
+
+<div class="divTable">
+<div class="divTableBody">
+<div class="divTableRow">
+<div class="divTableCell">
+
 <!-- FIRST MAINTAB DIV -->
 <div id="first" class="maintab">
 <div class="tab">
@@ -366,12 +403,12 @@ sm {
 </div>
 <!-- Force is sometimes the only both effective and available tool for changes. -->
 <div id="1" class="tabcontent">
-<img class="imginart" width="280vw" src="pictures/posts/getmoneroorgdownloads.jpg">
+<img class="imgintab" width="280vw" src="pictures/posts/getmoneroorgdownloads.jpg">
 Someone hacked the official website of the Monero cryptocurrency project [getmonero.org] and replaced legitimate Linux and Windows binaries available for download with malicious versions designed to steal funds from users wallets. The supply-chain cyberattack was revealed on Monday after a Monero user spotted that the cryptographic hash for binaries he downloaded from the official site didn't match the hashes listed on it Following an immediate investigation, the Monero team today also confirmed that its website, GetMonero.com, was indeed compromised, potentially affecting users who downloaded the CLI wallet between Monday 18th, 2:30 am UTC and 4:30 pm UTC. XMRCoreTeam investigates to find people who stay behind this attack.
 <sm>Source: getmonero.org / thehackernews.com</sm>
 </div>
 <div id="2" class="tabcontent">
-<img class="imginart" width="280vw" src="pictures/posts/europol+afp+imrat.jpg">
+<img class="imgintab" width="280vw" src="pictures/posts/europol+afp+imrat.jpg">
 A hacking tool that was able to give full remote control of a victim’s computer to cybercriminals has been taken down as a result of an international law enforcement operation targeting the sellers and users of the Imminent Monitor Remote Access Trojan (IM-RAT).
 The investigation, led by the Australian Federal Police (AFP), with international activity coordinated by Europol and Eurojust, resulted in an operation involving numerous judicial and law enforcement agencies in Europe, Colombia and Australia.
 Coordinated law enforcement activity has now ended the availiblity of this tool, which was used across 124 countries and sold to more than 14 500 buyers. IM-RAT can no longer be used by those who bought it.
@@ -401,30 +438,40 @@ The study, published in the Journal of Epidemiology and Community Health, includ
 </div>
 
 </div>
+
+</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">
+
 <!-- NEXT MAIN DIV -->
-<div style="padding: 20 0 20 0 ;" class="main">
-<p>
+<div style="padding: 20 0 20 0;" class="main">
+<img class="imgincon" width="280vw" src="pictures/ZOJbranding.png">
 ZOJ.ME Is a place for viral news from internet.
 
-
-</p>
-<p>
-
-
-
-</p>
 </div>
+
+</div>
+</div>
+<div class="divTableRow">
+<div class="divTableCell">
 
 <div class="footerty">
 All Rights Reserved ©2019/2020 Jeremi ErtY'wek
 <input type="checkbox" id="toggle">
 <label onclick="loadDoc()" for="toggle">About ZOJ.ME</label>
 <dialog style=""><label for="toggle">X</label>
-<p><div id="UNUSEDxhttpget"><h1>ZOJ.ME Public Services</h1>
-This website is maintained by Jeremi "ErtYwek" and I publish there helpful tools.
+<p><div id="xhttpget"><h1>ZOJ.ME Services</h1>
+
 </div></p>
 </dialog>
 </div>
+
+</div>
+</div>
+</div>
+</div>
+
 														<!-- S	C	R	I	P	T -->
 
 <script>
@@ -436,7 +483,7 @@ function loadDoc() {
       this.responseText;
     }
   };
-  xhttp.open("GET", "https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_best.txt", true);
+  xhttp.open("GET", "https://zoj.me/out/abouterty.html", true);
   xhttp.send();
 }
 </script>
