@@ -1,7 +1,7 @@
 --[[OPENING FOR ENOCH INJECTOR SCRIPT]]
   print("`ENOCH LOADING...")
   EXECUTOR="ErtY'wek'z ENOCH "
-  VERCTRL="19.11.06"
+  VERCTRL="2020.02.06"
 --[[
 	DEX Main Script
 	
@@ -11,9 +11,9 @@
 --]]
 --[[ENOCH IS A ENGINE MADE BY ERTY (PROREMIXPL) THAT HELPS DEVELOPERS IN MAKING THEIR GAMES]]
 --[[IT MAKES AVERAGE DEVELOPER WORK MORE EFFECTIVE
-  LM=game.StarterGui.Playground.EnochOS.LoadModule MM=game.StarterGui.Playground.EnochOS.MainModule
-  EM=game.StarterGui.Playground.EnochOS.ErrorModule LocP=game.Players.LocalPlayer HttpService=game:GetService('HttpService')ServerStorage=game:GetService("ServerStorage")DataStoreService=game:GetService("DataStoreService")TweenService=game:GetService("TweenService")
-  ]]
+ LM=game.StarterGui.Playground.EnochOS.LoadModule MM=game.StarterGui.Playground.EnochOS.MainModule EM=game.StarterGui.Playground.EnochOS.ErrorModule 
+ ]]
+LocP=game.Players.LocalPlayer HttpService=game:GetService('HttpService')ServerStorage=game:GetService("ServerStorage")DataStoreService=game:GetService("DataStoreService")TweenService=game:GetService("TweenService")
 prefix="`" --[[set the prefix, / slash or ! exclamation mark is most common on roblox]]
 function onChatted(msg, speaker)
 	local source=string.lower(speaker.Name)
