@@ -1,788 +1,157 @@
-<!-- ERTYWEK DOMINATING -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
-<!--    R	E	A	D	M	E
-Similar effect can use a lot less code using bootstrap and jQuery https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
-This was made just only for my usage on https://zoj.me shared over an CDN
-
+<!DOCTYPE HTML>
+<!--
+	ZOJ.ME ERTYWEK ONLINE BASTION
 -->
-
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="ZOJ.ME New technologies, top blogs, product reviews and ERTYWEK!">
-<meta name="keywords" content="HTML,CSS,XML,JavaScript">
-<meta name="author" content="Jeremi ErtYwek Ertywowzki">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="300"> <!-- RELOAD -->
-<meta http-equiv="Cache-control" content="public">
-
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<!-- ****** favicony faviconit.com ****** -->
-	<link rel="shortcut icon" href="/favicon.ico">
-	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico">
-	<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png">
-	<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
-	<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-	<link rel="apple-touch-icon" href="/favicon-57.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
-	<meta name="msapplication-TileColor" content="#FFFFFF">
-	<meta name="msapplication-TileImage" content="/favicon-144.png">
-	<meta name="msapplication-config" content="/browserconfig.xml">
-	<!-- ****** favicony faviconit.com ****** -->
-
-
-<title>PROJECTS</title>
-
-														<!-- S	T	Y	L	E -->
-<style>
-									/*trzeba zmienić skrypt js a konkretnie klase class*/
-.tl1:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(pictures/posts/getmoneroorgdownloads.jpg) top center;
-    opacity: .3;
-}
-.tl2:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(pictures/posts/europol+afp+imrat.jpg) top center;
-    opacity: .3;
-}
-.tl3:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(pictures/posts/bg.jpg) top center;
-    opacity: .3;
-}
-.tl4:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(pictures/posts/bg.jpg) top center;
-    opacity: .3;
-}
-.tl5:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url(pictures/posts/bg.jpg) top center;
-    opacity: .3;
-}
-</style>
-<style>
-h1 {
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  line-height: 32px;
-  padding-top: 70px;
-}
-h1 a {
-  color: #66CCCC;
-}
-
-.price-table-wrapper {
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-}
-.price-table-wrapper .featured-table {
-  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
-}
-.price-table-wrapper .pricing-table {
-  display: inline-block;
-  border: 1px solid #C8C8C8;
-  border-radius: 10px;
-  background: #e1ccff;
-  margin: 20px;
-  transition: all 0.3s ease-in-out;
-}
-.price-table-wrapper .pricing-table__header {
-  padding: 20px;
-  font-size: 20px;
-  color: #909090;
-  background: #B9F8FF;
-}
-.price-table-wrapper .pricing-table__price {
-  color: #66CCCC;
-  padding: 20px;
-  margin: auto;
-  font-size: 40px;
-  font-weight: 500;
-}
-.price-table-wrapper .pricing-table__button {
-  display: block;
-  background: #66CCCC;
-  text-decoration: none;
-  padding: 20px;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-.price-table-wrapper .pricing-table__button:before {
-  position: absolute;
-  left: -20%;
-  top: -10%;
-  content: '';
-  width: 60%;
-  height: 220%;
-  -webkit-transform: rotate(-30deg);
-          transform: rotate(-30deg);
-  background: white;
-  opacity: .3;
-  transition: all 0.3s ease-in-out;
-}
-.price-table-wrapper .pricing-table__button:after {
-  position: absolute;
-  content: '>';
-  top: 0;
-  right: 0;
-  font-size: 25px;
-  padding: 15px;
-  padding-right: 40px;
-  color: white;
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-}
-.price-table-wrapper .pricing-table__button:hover {
-  background: black;
-}
-.price-table-wrapper .pricing-table__list {
-  padding: 20px;
-  color: #930B0B;
-}
-.price-table-wrapper .pricing-table__list li {
-  padding: 15px;
-  border-bottom: 1px solid #C8C8C8;
-}
-.price-table-wrapper .pricing-table__list li:last-child {
-  border: none;
-}
-.price-table-wrapper .pricing-table:hover {
-  box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.36);
-}
-.price-table-wrapper .pricing-table:hover .pricing-table__button {
-  padding-left: 0;
-  padding-right: 35px;
-}
-.price-table-wrapper .pricing-table:hover .pricing-table__button:before {
-  top: -80%;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  width: 100%;
-}
-.price-table-wrapper .pricing-table:hover .pricing-table__button:after {
-  opacity: 1;
-  padding-right: 15px;
-}
-
-/* b-dark-purple#5c00e6 dark-green#004d00 */
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-}
-
-ul.topnav {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-  width: 100%;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #000000;
-  z-index: 7;
-}
-
-ul.topnav li {float: left;border-right: 0px solid #004d00;}
-
-ul.topnav li:last-child {border-right: none;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {background-color: #ffff00;}
-ul.topnav li a.active {color: #9900ff;}
-
-ul.topnav li.right {float: right;}
-
-@media screen and (max-width: 599px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
-}
-li a, .dropbtn {
-  display: inline-block;
-  color: #ffff00;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #111;
-}
-
-/* this was deleted cause it does text a align left /li.dropdown {
-  display: inline-block;
-}*/
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #000000;
-  min-width: 170px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 8;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-}
-
-.dropdown-content a:hover {background-color: #111;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-																			/*THERE IS THE PADDING COLORS AND BASIC POINTS OF DESIGN STYLES*/
-body {
- margin: 0;
- font-family: 'Trebuchet MS', Helvetica, sans-serif;
- background-color: #246b1a;
- color: #ffffff;
-}
-
-.maintab {
- color: #FFFF24;
- font-size: 20px;
- text-align: justify;
- align: top;
- width: 100%;
- text-shadow: 1px 1px 9px #f9f91f;
- padding: 0 0 1% 0;
- text-justify: inter-word;
- word-wrap: break-word
- clear: both;
-}
-
-.main {
- color: #FFFF24;
- font-size: 20px;
- text-align: center;
- text-justify: inter-word;
- word-wrap: break-word
- align: top;
- width: 100%;
- text-shadow: 1px 1px 9px #f9f91f;
- padding: 0 1% 1% 1%;
- clear: both;
- letter-spacing: 0.035em;
-}
-
-.footerty {
- background-color: #000000;
- color: #ffffff;
- text-align: center;
- font-weight: bold;
- width: 100%;
- padding: 4px 0 3px 0;
- position: relative;
-}
-									/*img in article*/
-.imgintab {
- float: right;
- margin: 0px 0px -5px 4px;
- clear: both;
-}
-
-.imgincon {
- float: center;
- text-align: center;
- display: block;
- margin-top: -15px;
- margin-bottom: -15px;
- margin-left: auto;
- margin-right: auto;
- clear: both;
- width: 100%;
- max-width: 200px;
- height: auto;
-}
-											/* its for small notes under news content "source" */
-sm {
-  font-size: 12px;
-  color: #9494b8;
-}
-
-																						/* hEY LINKS AND BUTTON */
-x {
- background-color: red;
- box-shadow: 0 5px 0 darkred;
- color: white;
- padding: 1em 1.5em;
- position: relative;
- text-decoration: none;
- text-transform: uppercase;
-}
-/* unvisited link */
-a:link {
- color: #ffcccc;
- text-decoration: none;
-}
-/* visited link */
-a:visited {
- color: #ffcccc;
-}
-/* mouse over link */
-a:hover {
- color: #ff4d4d;
- background-color: #96d1f8;
- cursor: pointer;
- text-decoration: underline;
-}
-/* selected link */
-a:active {
- box-shadow: none;
- top: 5px;
-}
-
-																				/* D I V / S & T A B L E S  |	S	P	R	I	T	E	S */
-
-.divTable{
-	display: table;
-	width: 100%;
-}
-.divTableRow {
-	display: table-row;
-}
-.divTableHeading {
-	display: table-header-group;
-}
-.divTableCell, .divTableHead {
-	border: 0px solid #999999;
-	display: table-cell;
-}
-.divTableHeading {
-	display: table-header-group;
-}
-.divTableFoot {
-	display: table-footer-group;
-}
-.divTableBody {
-	display: table-row-group;
-}
-
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;}
-
-/* Style the tab */
-.tab {
- float: left;
- border: 0px solid #000000;
- background-color: inherit;
- width: 40%;
- padding: 0 0 10px 0;
- text-justify: inter-word;
- word-wrap: break-word;
-}
-
-/* Style the divs inside the tab */
-.tab div {
-  display: block;
-  background-color: #004d00;
-  color: #ffffff;
-  padding: 22px 12px ;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.4s;
-  font-size: 17px;
-}
-
-
-
-/* Change background color of divs on hover */
-.tab div:hover {
-  background-color: #85cc00;
-}
-
-/* Create an active/current "tab div" class */
-.tab div.active {
-  background-color: #5b2e9e;
-}
-
-/* 																Style the tab content */
-.tabcontent {
- float: left;
- padding: 0px 0px;
- border: 1px solid #208000;
- width: 60%;
- 
- border-right: none;
- border-top: none;
- padding: 0 20px 10px 10px;
- text-align: justify;
- text-justify: inter-word;
- word-wrap: break-word;
- display: block;
-
-}
-.tablinks {
-  position: relative;
-  z-index: 5;
-  color: #000;
-  font-size: 400%;
-  padding: 20px;
-}
-
-</style>
-
-<link rel="stylesheet" type="text/css" href="out/EY3.css">
-
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101213734);</script>
-<script async src="//static.getclicky.com/js"></script>
-<script type="text/javascript" src="https://rocketr.net/assets/RocketrEmbedCustom.js"></script>
-</head>
-<body>
-														<!-- B	O	D	Y -->
-
-														<!-- H	E	A	D	E	R -->
-<ul class="topnav">
-<li><div><a class="pagelink" onclick="openPage(event, 'page1')" id="PageDefaultOpen" href="#">News</a></div></li>
-<li><div><a class="pagelink" onclick="openPage(event, 'page2')" href="#">Articles</a></div></li>
-<li><div><a class="pagelink" onclick="openPage(event, 'page3')" href="#">Services</a></div></li>
-<li class="dropdown">
-	<a href="/projects" onclick="menu('projects'); clicky.log(this.href,this.innerText); return false;" class="dropbtn">Projects</a>
-	<div class="dropdown-content">
-		<a href="/projects/#">#</a>
-		<a href="/projects/#">#</a>
-	</div>
-</li>
-<li class="right">
-	<a href="#"><form method="get" action="https://www.google.com/custom" target="google_window">
-	<input type="hidden" name="domains" value="zoj.me">
-	<input type="text" name="q" style="height:18px;" placeholder="Search " maxlength="255" value="">
-	<input type="image" name="sa" height="15px" src="pictures/search_db25x.png" value="Search">
-	<input type="hidden" type="radio" name="sitesearch" value="">
-	<input type="hidden" type="radio" name="sitesearch" value="zoj.me" checked="checked">
-	</form></a>
-</li>
-</ul>
-
-
-
-
-<div class="divTable">
-
-
-
-<div class="divTableBody">
-<div class="divTableRow">
-
-	<div class="divTableCell">
-	
-	<div id="jobs"> <!-- pagecontent begin div-->
-	
-														<div id="page1" class="pagecontent"><!-- page1 begin -->
-	
-	<!-- NEWS MAINTAB DIV -->
-<div id="jeden" class="maintab">
-	<div class="tab">
-		<div class="tablinks tl1" onclick="openCity(event, '1')" id="defaultOpen">
-		XMR Monero cryptocurrency website gets hacked
-		</div>
-		<div class="tablinks tl2" onclick="openCity(event, '2')">
-		Authorities take down 'Imminent Monitor' RAT malware website
-		</div>
-		<div class="tablinks tl3" onclick="openCity(event, '3')">
-		Dexphot malware uses fileless techniques to install cryptominer
-		</div>
-		<div class="tablinks tl4" onclick="openCity(event, '4')">
-		SQL Injection Errors No Longer the Top Software Security Issue
-		</div>
-		<div class="tablinks tl5" onclick="openCity(event, '5')">
-		Scientists Conclude Fluoride Causes Hypothyroidism Leading To Depression, Weight Gain, and Worse
-		</div>
-	</div>
-	<!-- Force is sometimes the only both effective and available tool for changes. -->
-	<div id="1" class="tabcontent">
-	<img class="imgintab" width="280vw" src="pictures/posts/getmoneroorgdownloads.jpg">
-	Someone hacked the official website of the Monero cryptocurrency project [getmonero.org] and replaced legitimate Linux and Windows binaries available for download with malicious versions designed to steal funds from users wallets. The supply-chain cyberattack was revealed on Monday after a Monero user spotted that the cryptographic hash for binaries he downloaded from the official site didn't match the hashes listed on it Following an immediate investigation, the Monero team today also confirmed that its website, GetMonero.com, was indeed compromised, potentially affecting users who downloaded the CLI wallet between Monday 18th, 2:30 am UTC and 4:30 pm UTC. XMRCoreTeam investigates to find people who stay behind this attack.
-	<sm>Source: getmonero.org / thehackernews.com</sm>
-	</div>
-	<div id="2" class="tabcontent">
-	<img class="imgintab" width="280vw" src="pictures/posts/europol+afp+imrat.jpg">
-	A hacking tool that was able to give full remote control of a victim’s computer to cybercriminals has been taken down as a result of an international law enforcement operation targeting the sellers and users of the Imminent Monitor Remote Access Trojan (IM-RAT).
-	The investigation, led by the Australian Federal Police (AFP), with international activity coordinated by Europol and Eurojust, resulted in an operation involving numerous judicial and law enforcement agencies in Europe, Colombia and Australia.
-	Coordinated law enforcement activity has now ended the availiblity of this tool, which was used across 124 countries and sold to more than 14 500 buyers. IM-RAT can no longer be used by those who bought it.
-	Search warrants were executed in Australia and Belgium in June 2019 against the developer and one employee of IM-RAT. Subsquently, an international week of actions was carried out this November, resulting in the takedown of the Imminent Monitor 
-	infrastructure and the arrest at this stage of 13 of the most prolific users of this Remote Access Trojan (RAT). Over 430 devices were seized and forensic analysis of the large number of computers and IT equipment seized continues.
-	Actions were undertaken this week in the framework of this operation in the following countries: Australia, Colombia,  Czechia, the Netherlands, Poland, Spain, Sweden and the United Kingdom. 
-	<sm>Source: europol.europa.eu / imminentmethods.net</sm>
-	</div>
-	<div id="3" class="tabcontent">
-	Microsoft Corporation revealed its discovery of a polymorphic malware that uses fileless techniques to execute a cryptomining program on victimized machines.
-	Dubbed Dexphot, the malware was first observed in October 2018 when Microsoft detected a campaign that “attempted to deploy files that changed every 20 to 30 minutes on thousands of devices,” according to a blog post published yesterday by the Microsoft Defender ATP Research Team. At one point, on June 18, Microsoft saw reports of Dexphot-related malicious behavior in close to 80,000 machines, though that number dropped to under 10,000 by July 19.
-	Dexphot sports a complex attack chain that relies largely on legitimate processes (aka living off the land) to ultimately execute the payload. According to Microsoft, the process chain involves five files: an installer with two URLs, an MSI package file, a password-protected ZIP archive, a loader DLL, and an encrypted data file with three executables. These executables are loaded via process hollowing, a fileless technique that involves replacing the contents of a legitimate system process with malicious code.
-	<sm>Source: microsoft.com</sm>
-	</div>
-	<div id="4" class="tabcontent">
-	SQL injection errors are no longer considered the most severe or prevalent software security issue.
-	Replacing it at the top of the Common Weakness Enumeration (CWE) list of most dangerous software errors is "Improper Restriction of Operations within the Bounds of a Memory Buffer." Cross-site scripting (XSS) errors rank second on the list, followed by improper input validation, information exposure, and out-of-bounds read errors. SQL injection flaws are now ranked sixth on the list of most severe security vulnerabilities.
-	The Department of Homeland Security's Systems Engineering and Development Institute, operated by The MITRE Corp., this week released an updated top 25 CWE listing of software errors. The update is the first in eight years and ranks security vulnerabilities based on prevalence and severity.
-	The CWE team looked at a dataset of some 25,000 Common Vulnerabilities and Exposures (CVE) entries over the past two years and focused on security weaknesses in software that are both common and have the potential to cause significant harm. Issues that have a low impact or are rarely excluded were filtered out.
-	<sm>Source: darkreading.com / cwe.mitre.org/top25/archive/2019/2019_cwe_top25.html</sm>
-	</div>
-	<div id="5" class="tabcontent">
-	Researchers at the University of Kent are the latest establishment to have studied this growing problem.
-	The extensive study involved them looking at data from nearly every single medical practice in England, and they found that fluoride may be increasing the risk for hypothyroidism, or an underactive thyroid, a condition in which the thyroid gland fails to produce enough hormones, resulting in symptoms such as fatigue, obesity and depression.
-	The study, published in the Journal of Epidemiology and Community Health, included the largest population ever to be analysed in relation to fluoride consumption.
-	<sm>Source: anonhq.com / organicandhealthy.org/2016/11/scientists-conclude-fluoride-causes.html</sm>
-	</div>
-
-</div>
-
-														</div><!-- page1 end-->
-
-														<div id="page2" class="pagecontent"><!-- page2 begin -->
-<div id="dwa">
-
-	<!-- ARTICLES MAINTAB DIV -->
-<div class="main">
-Jak to obecnie z hostingami jest.
-
-Drzewiej serwery były tańsze nie było tyle ataków na strony, stare dobre czasy. Ale czasy się zmieniają.
-
-Obecnie z tzw. shared hostingami (hostingami współdzielonymi) jest tak że co chwile znika jedna firma świadcząca usługę a zaraz pojawia się nowa. Często firmy nowe jak i te dobrze nam znane używają marketingowych kłamstw typu nielimitowana przestrzeń albo nielimitowane odsłony. W głębi tak
-
-
-</div>
-
-
-
-</div>
-														</div><!-- page2 end-->
-
-														<div id="page3" class="pagecontent"><!-- page3 begin -->
-<div id="trzy">
-
-	<!-- SERVICES MAINTAB DIV -->
-<div class="main">
-TESTING TESTING TESTING TESTING ...
-</div>
-
-<div class="price-table-wrapper">
-  <div class="pricing-table featured-table">
-    <h2 class="pricing-table__header">- BASIC -</h2>
-    <h3 class="pricing-table__price">0€<sm> Forever</sm></h3>
-    <a target="_blank" class="pricing-table__button" href="https://cloud.zoj.me/index.php/apps/registration/">
-		Register for free!
-    </a>
-    <ul class="pricing-table__list">
-      <li></li>
-      <li>1gb storage space</li>
-      <li>Best price!</li>
-      <li>No support</li>
-    </ul>
-  </div>
-  <div class="pricing-table featured-table">
-    <h2 class="pricing-table__header">- PERSONAL -</h2>
-    <h3 class="pricing-table__price">3€<sm>/year</sm></h3>
-    <a target="_blank" class="pricing-table__button" href="https://cloud.zoj.me/index.php/apps/registration/">
-		Register for free!
-    </a>
-    <ul class="pricing-table__list">
-      <li></li>
-      <li>20gb storage space</li>
-      <li>Best price!</li>
-      <li>Ticket system support</li>
-    </ul>
-  </div>
-  <div class="pricing-table featured-table">
-    <h2 class="pricing-table__header">- BUSINESS -</h2>
-    <h3 class="pricing-table__price">8€<sm>/year</sm></h3>
-    <a target="_blank" class="pricing-table__button" href="https://cloud.zoj.me/index.php/apps/registration/">
-		Register for free!
-    </a>
-    <ul class="pricing-table__list">
-      <li></li>
-      <li>200gb storage space</li>
-      <li>Best price!</li>
-      <li>Ticket system support</li>
-    </ul>
-  </div>
-    <div class="pricing-table featured-table">
-    <h2 class="pricing-table__header">- ENTERPRISE -</h2>
-    <h3 class="pricing-table__price">30€<sm>/year</sm></h3>
-    <a target="_blank" class="pricing-table__button" href="https://cloud.zoj.me/index.php/apps/registration/">
-		Register for free!
-    </a>
-    <ul class="pricing-table__list">
-      <li></li>
-      <li>999gb storage space</li>
-      <li>Best price!</li>
-      <li>Ticket system support</li>
-    </ul>
-  </div>
-</div>
-
-</div>
-														</div><!-- page3 end-->
-
-</div> <!-- pagecontent end /div -->
-
-</div>
-
-</div>
-
-
-
-
-<div class="divTableRow">
-<div class="divTableCell">
-
-<!-- NEXT MAIN DIV -->
-<div style="padding: 20 0 20 0;" class="main">
-<img class="imgincon" width="280vw" src="pictures/ZOJbranding.png">
-ZOJ.ME Is a place for viral news from internet, blog competitions and tutorials.
-We also share subdomains for webmasters and programmers who doesn't have their own domain.
-
-
-</div>
-
-</div>
-</div>
-
-</div>
-
-<div class="divTableRow">
-	<div class="divTableCell">
-	
-		<div class="footerty">
-		All Rights Reserved ©2019/2020 <a href="https://ertywek.zoj.me">Jeremi ErtY'wek</a>
-		<input type="checkbox" id="toggle">
-		<label onclick="loadDoc()" for="toggle">About ZOJ.ME</label>
-		<dialog style="">ZOJ.ME Services <label for="toggle">X</label>
-		<p><div id="xhttpget">
-		
-		</div></p>
-		</dialog>
-		<br>
-		<!--In case you want a subdomain contact me via <a href="https://cutt.ly/De248Sz">facebook</a> or discord: ErtY#9909-->
-	
-		</div>
-	
-	</div>
-</div>
-
-</div>
-</div>
-
-														<!-- S	C	R	I	P	T -->
-
-<script>
-function loadDoc() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("xhttpget").innerHTML =
-      this.responseText;
-    }
-  };
-  xhttp.open("GET", "https://zoj.me/out/abouterty.html", true);
-  xhttp.send();
-}
-</script>
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-<script>
-function openPage(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("pagecontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("pagelink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="PageDefaultOpen" and click on it
-document.getElementById("PageDefaultOpen").click();
-</script>
-
-
-</body>
+<html>
+	<head>
+		<title>ZOJ.ME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html"><strong>HOMEPAGE</strong></a></h1>
+						<h1><a href="/PROJECTS/"><strong>PROJECTS</strong></a></h1>
+						<nav>
+							<ul>
+								<li><a href="#footer" class="icon solid fa-info-circle">About</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<article class="thumb">
+							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
+							<h2>Logo/Brand & Vector Design</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
+							<h2>News Panel Goes here</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
+							<h2>HOMEPAGE UNDER CONSTRUCTION</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
+							<h2>Pretty Photos</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/05.jpg" class="image"><img src="images/thumbs/05.jpg" alt="" /></a>
+							<h2>Cursis aliquam nisl</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
+							<h2>Sed consequat phasellus</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/07.jpg" class="image"><img src="images/thumbs/07.jpg" alt="" /></a>
+							<h2>Mauris id tellus arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/08.jpg" class="image"><img src="images/thumbs/08.jpg" alt="" /></a>
+							<h2>Nunc vehicula id nulla</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/09.jpg" class="image"><img src="images/thumbs/09.jpg" alt="" /></a>
+							<h2>Neque et faucibus viverra</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
+							<h2>Mattis ante fermentum</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
+							<h2>Sed ac elementum arcu</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
+							<h2>Vehicula id nulla dignissim</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer" class="panel">
+						<div class="inner split">
+							<div>
+								<section>
+									<h2>Official Jeremi ErtYwek Portfolio</h2>
+									<p>
+									Welcome to my homepage. Checkout my projects.
+									
+									
+									<p>
+								</section>
+								<section>
+									<h2>Follow me on ...</h2>
+									<ul class="icons">
+										<li><a target="_blank" href="https://t2m.io/X0KoxhdH" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a target="_blank" href="https://t2m.io/8DfQeory" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a target="_blank" href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a target="_blank" href="https://t2m.io/BaPOofNu" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a target="_blank" href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+										<li><a target="_blank" href="https://t2m.io/fPbDgPWT" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+										<li><a target="_blank" href="https://t2m.io/RDRVjXRo" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+									</ul>
+								</section>
+								<p class="copyright">
+									Copyright &copy; 2019/2020 All Rights Reserved Jeremi ErtYwek <br> Multiverse Theme by HTML5 UP.
+								</p>
+							</div>
+							<div>
+								<section><!--
+									<h2>Get in touch</h2>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="field half">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+											<div class="field">
+												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>-->
+								</section>
+							</div>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
