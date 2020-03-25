@@ -2,9 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
 <!--    R	E	A	D	M	E
-Similar effect can use a lot less code using bootstrap and jQuery https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
-This was made just only for my usage on https://zoj.me shared over an CDN
-
+Similar navbar effect can be made with a lot less code using bootstrap and jQuery https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_navbar_collapse
+I've made this only for my usage on https://zoj.me shared over an CDN
+#5900b3
 -->
 
 <head>
@@ -47,6 +47,7 @@ This was made just only for my usage on https://zoj.me shared over an CDN
 														<!-- S	T	Y	L	E -->
 <style>
 									/*trzeba zmienić skrypt js a konkretnie klase class*/
+									/*Later I will add all these styles to main.css for rel*/
 .tl1:before {
     content: "";
     position: absolute;
@@ -503,15 +504,14 @@ body {font-family: "Lato", sans-serif;}
 														<!-- H	E	A	D	E	R -->
 <ul class="topnav">
 <li><div><a class="pagelink" onclick="openPage(event, 'page1')" id="PageDefaultOpen" href="#">News</a></div></li>
+
 <li><div><a class="pagelink" onclick="openPage(event, 'page2')" href="#">Articles</a></div></li>
 <li><div><a class="pagelink" onclick="openPage(event, 'page3')" href="#">Services</a></div></li>
-<li class="dropdown">
-	<a href="/projects" onclick="menu('projects'); clicky.log(this.href,this.innerText); return false;" class="dropbtn">Projects</a>
-	<div class="dropdown-content">
-		<a href="/projects/#">#</a>
-		<a href="/projects/#">#</a>
-	</div>
-</li>
+<li><div><a class="pagelink" onclick="openPage(event, 'page4')" href="#">Projects</a></div></li>
+<!--li class="dropdown"><a href="#" class="dropbtn">Dropdown</a>
+	<div class="dropdown-content"><a href="#">Dropdown1</a><a href="#">Dropdown2</a></div>
+</li>-->
+
 <li class="right"><a>
 	<form method="get" action="https://www.google.com/custom" target="google_window">
 	<input type="hidden" name="domains" value="zoj.me">
@@ -711,6 +711,20 @@ Obecnie z tzw. shared hostingami (hostingami współdzielonymi) jest tak że co 
 
 </div>
 														</div><!-- page3 end-->
+
+														<div id="page4" class="pagecontent"><!-- page4 begin -->
+<div id="dwa">
+
+	<!-- ARTICLES MAINTAB DIV -->
+<div class="main">
+TESTING TESTING TESTING HEHEHE
+
+</div>
+
+
+
+</div>
+														</div><!-- page4 end-->
 
 </div> <!-- pagecontent end /div -->
 
